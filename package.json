@@ -2,6 +2,7 @@
   "name": "git-blog",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.12"
