@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # 远程调试APP内h5
 
 APP业务中常常需要对线上h5页面排查定位问题
@@ -9,26 +12,26 @@ APP业务中常常需要对线上h5页面排查定位问题
 
 整理了一些目前各端的情况和方式以供参考：
 
-### Android远程调试
+## Android远程调试
 前置准备：
 * Android手机
 * App测试包
 * USB数据线
 * Chrome浏览器
 
-#### Step1: 开启Webview远程调试
+### Step1: 开启Webview远程调试
 需要打开app测试包内的webview远程调试开关
 
 以赶集App为例：“我的Tab > 右上角设置 > 开发者选项 > WebView远程调试”
 ![image.png](./setting.webp)
 
-#### Step2: 启用开发者模式
+### Step2: 启用开发者模式
 开发者模式的打开方法是，进入”设置 > 关于手机”菜单，找到”内部版本号”这一项（或类似名称的条目），在上面连续按七次。退回上一级菜单，应该就能看到”开发者模式”。
 
 进入其中，打开”USB 调试”选项。
 ![image.png](./setting2.webp)
 
-#### Step3: 连接手机
+### Step3: 连接手机
 1、使用 USB 线将手机和电脑连接起来。手机可能会有弹框，询问是否允许访问手机数据，选择”允许”。
 ![image.png](./usb.webp)
 
@@ -40,7 +43,7 @@ APP业务中常常需要对线上h5页面排查定位问题
 可以看到连接成功（如果没有显示，打开app内任意h5页面）
 ![image.png](./remote-target.webp)
 
-#### Step4: 调试网页
+### Step4: 调试网页
 1、打开app内h5页面
 2、查看电脑chrome标签页(chrome://inspect/#devices)会新增一条页面信息
 3、点击“inspect”按钮会弹窗独立调试窗口
@@ -50,21 +53,21 @@ APP业务中常常需要对线上h5页面排查定位问题
 可以在独立的窗口调试页面
 ![bb 20211111 20.51.34 1.gif](./preview2.gif)
 
-### IOS远程调试
+## IOS远程调试
 前置准备：
 * IOS手机
 * APP开发版(通过USB方式安装)
 * USB数据线
 * Safari浏览器
 
-#### Step1: 启动iPhone中Safari调试模式
+### Step1: 启动iPhone中Safari调试模式
 启用“Web 检查”功能，打开iPhone 依次进入“设置 > Safari浏览器 > 高级 > 网页检查器 > 启用”。
 ![image.png](./setting-ios.webp)
 
-#### Step2: 连接手机
+### Step2: 连接手机
 使用 USB 将手机连接到电脑，如果弹出“是否信任此电脑”对话框，就选择“信任此电脑“
 
-#### Step3: Mac Safari调试
+### Step3: Mac Safari调试
 1、打开Mac Safari浏览器开发菜单
 运行 Safari 浏览器，然后依次选取“Safari 浏览器 > 偏好设置”，点按“高级”面板，然后勾选“在菜单栏中显示开发菜单”。
 ![93443648ce0c618a6f49b05.png](./setting-safari.webp)
