@@ -1,4 +1,5 @@
 ---
+layout: doc
 outline: deep
 ---
 # 远程调试APP内h5
@@ -23,13 +24,13 @@ APP业务中常常需要对线上h5页面排查定位问题
 需要打开app测试包内的webview远程调试开关
 
 以赶集App为例：“我的Tab > 右上角设置 > 开发者选项 > WebView远程调试”
-![image.png](./setting.webp)
+<img src="./setting.webp" width="300">
 
 ### Step2: 启用开发者模式
 开发者模式的打开方法是，进入”设置 > 关于手机”菜单，找到”内部版本号”这一项（或类似名称的条目），在上面连续按七次。退回上一级菜单，应该就能看到”开发者模式”。
 
 进入其中，打开”USB 调试”选项。
-![image.png](./setting2.webp)
+<img src="./setting2.webp" width="300">
 
 ### Step3: 连接手机
 1、使用 USB 线将手机和电脑连接起来。手机可能会有弹框，询问是否允许访问手机数据，选择”允许”。
@@ -62,7 +63,7 @@ APP业务中常常需要对线上h5页面排查定位问题
 
 ### Step1: 启动iPhone中Safari调试模式
 启用“Web 检查”功能，打开iPhone 依次进入“设置 > Safari浏览器 > 高级 > 网页检查器 > 启用”。
-![image.png](./setting-ios.webp)
+<img src="./setting-ios.webp" width="300">
 
 ### Step2: 连接手机
 使用 USB 将手机连接到电脑，如果弹出“是否信任此电脑”对话框，就选择“信任此电脑“
